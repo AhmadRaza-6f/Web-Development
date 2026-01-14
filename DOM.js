@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: pink;">
-     <h1 style="background-color: orange; color: brown;" id="first">I am Coming on 
+     <h1 style="background-color: orange; color: brown;" id="first">Strike is Coming on 
         <span style="display: none;">18 October</span></h1>
      <h2 class="third" id="second">It is coming on dhanteras</h2>
      <h2 >Hello JI</h2>

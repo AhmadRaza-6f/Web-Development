@@ -153,3 +153,5 @@ function double(value){
 
 const n = double(20)(5);
 console.log(n);
+
+

@@ -1,4 +1,4 @@
-// Execution Context for JS using 
+// Execution Context for JS / Interpreter Working 
 // Memory allocation
 // a = 10
 // b = 20

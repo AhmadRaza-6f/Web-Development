@@ -5,16 +5,10 @@
 
 // let a = 10;
 // const b = 20;
-
-
-
 // if(true){
 //     let d = 30;
     
 // }
-
- 
-
 // function greet(){
 
 //     let c = 30;
@@ -25,9 +19,7 @@
 // console.log(e);
 // greet();
 
-
 // let global = 30;
-
 
 // function greet(){
      

@@ -143,5 +143,5 @@ function double(value){
     
 }
 
-const n = double(20)(5);
+const n = double(20)(4);
 console.log(n);

@@ -5,9 +5,7 @@
 // addNumber = fnCode
 // sumResult1 = undefined
 // sumeResult2 = undefined
-
 // Execution phase
-
 // console.log(a);
 // var a = 10;
 // var b = 20;

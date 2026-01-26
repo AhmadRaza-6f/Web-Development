@@ -3,6 +3,7 @@
 // functional -> accesible only to that function
 // Block level scope-> accesible only to that Block
 
+
 // let a = 10;
 // const b = 20;
 // if(true){

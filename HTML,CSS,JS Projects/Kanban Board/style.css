@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+:root {
+  /* Background Colors */
+  --bg-primary-color: #1f1d1d;
+  /* Font Colors */
+  --font-color: #fbfcfa;
+  /* button color */
+  --btn-color: #1a1a1a;
+  --btn-color-hover: #636560;
+  /* Card Color */
+  --card-color: #232422;
+  /* Delete Button Color */
+  --delete-color: #861f1f;
+  --delete-color-hover: #e30f0f;
+  /* paddings variables */
+  --padding-s: 5px;
+  --padding-m: 10px;
+  --padding-l: 15px;
+  --padding-xl: 20px;
+  --padding-2xl: 30px;
+  /* Border Radius Variables */
+  --border-radius-s: 5px;
+  --border-radius-m: 10px;
+  --border-radius-l: 15px;
+  --border-radius-xl: 20px;
+  --border-radius-2xl: 30px;
+  --border-radius-3xl: 40px;
+}
+body {
+  background-color: var(--bg-primary-color);
+  color: var(--font-color);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+nav {
+  padding: var(--padding-l) var(--padding-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-primary-color);
+}
+nav button {
+  background-color: var(--btn-color);
+  color: var(--font-color);
+  border: none;
+  outline: none;
+  padding: var(--padding-m);
+  border-radius: var(--border-radius-l);
+  cursor: pointer;
+  padding: var(--padding-l) var(--padding-l);
+  transition: all 0.3s ease;
+}
+nav button:hover {
+  background-color: var(--btn-color-hover);
+  color: var(--font-color);
+  transition: all 0.3s ease;
+}
+section {
+  padding: var(--padding-xl) var(--padding-2xl);
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: var(--padding-l);
+}
+.task-column {
+  background-color: var(--card-color);
+  flex-grow: 1;
+  width: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-m);
+  padding: var(--border-radius-m);
+  border-radius: var(--border-radius-l);
+  transition:
+    scale 0.9s cubic-bezier(0.19, 1, 0.22, 1),
+    border 0s;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-m) var(--padding-l);
+  width: 100%;
+}
+.hovered {
+  border: dotted 2px var(--font-color);
+  scale: 1.05;
+  /* border: 0s; */
+}
+.tasks {
+  background-color: var(--bg-primary-color);
+  padding: var(--padding-m);
+  border-radius: var(--border-radius-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-m);
+  cursor: grab;
+}
+.tasks h2,
+.tasks p {
+  overflow-wrap: break-word; /* lamba text wrap ho jayega */
+  word-break: break-word;
+}
+.tasks button {
+  align-self: flex-end;
+  padding: var(--padding-m);
+  border-radius: var(--border-radius-m);
+  border: none;
+  outline: none;
+  background-color: var(--delete-color);
+  color: var(--font-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tasks button:hover {
+  background-color: var(--delete-color-hover);
+  transition: all 0.3s ease;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.activate {
+  display: flex;
+}
+.modal .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #464c4e51;
+  backdrop-filter: blur(5px);
+}
+.modal .center {
+  background-color: var(--bg-primary-color);
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 20%;
+  border-radius: var(--border-radius-m);
+  gap: var(--padding-m);
+  z-index: 1;
+  padding: var(--padding-l);
+}
+.modal .center #task-title,
+#task-description,
+input {
+  padding: var(--padding-xl);
+  background-color: var(--card-color);
+  color: var(--font-color);
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  border-radius: var(--border-radius-m);
+}
+.modal .center #task-description {
+  height: 80%;
+}
+.modal .center #task-title {
+  font-weight: bold;
+}
+.modal .center button {
+  padding: var(--padding-m);
+  border-radius: var(--border-radius-m);
+  border: none;
+  outline: none;
+  background-color: var(--card-color);
+  color: var(--font-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.modal .center button:hover {
+  background-color: var(--btn-color);
+  transition: all 0.3s ease;
+}

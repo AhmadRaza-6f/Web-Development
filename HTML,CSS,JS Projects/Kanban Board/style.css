@@ -26,7 +26,7 @@ body {
   --bg-primary-color: #1f1d1d;
   /* Font Colors */
   --font-color: #fbfcfa;
-  /* button color */
+  /* Button Color */
   --btn-color: #1a1a1a;
   --btn-color-hover: #636560;
   /* Card Color */
@@ -34,19 +34,21 @@ body {
   /* Delete Button Color */
   --delete-color: #861f1f;
   --delete-color-hover: #e30f0f;
-  /* paddings variables */
-  --padding-s: 5px;
-  --padding-m: 10px;
-  --padding-l: 15px;
-  --padding-xl: 20px;
-  --padding-2xl: 30px;
-  /* Border Radius Variables */
-  --border-radius-s: 5px;
-  --border-radius-m: 10px;
-  --border-radius-l: 15px;
-  --border-radius-xl: 20px;
-  --border-radius-2xl: 30px;
-  --border-radius-3xl: 40px;
+
+  /* Padding Variables - rem use karo */
+  --padding-s: 0.3rem; /* 5px tha */
+  --padding-m: 0.625rem; /* 10px tha */
+  --padding-l: 0.9rem; /* 15px tha */
+  --padding-xl: 1.25rem; /* 20px tha */
+  --padding-2xl: 1.875rem; /* 30px tha */
+
+  /* Border Radius - rem use karo */
+  --border-radius-s: 0.3rem; /* 5px tha */
+  --border-radius-m: 0.625rem; /* 10px tha */
+  --border-radius-l: 0.9rem; /* 15px tha */
+  --border-radius-xl: 1.25rem; /* 20px tha */
+  --border-radius-2xl: 1.875rem; /* 30px tha */
+  --border-radius-3xl: 2.5rem; /* 40px tha */
 }
 body {
   background-color: var(--bg-primary-color);
@@ -185,7 +187,7 @@ input {
   color: var(--font-color);
   border: 0;
   outline: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   border-radius: var(--border-radius-m);
 }
 .modal .center #task-description {

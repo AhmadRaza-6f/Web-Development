@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="infos">
+          <!-- highest score section -->
+          <div class="info">
+            <div>
+              <h3>
+                Highest Score:
+                <span id="high-score">0</span>
+              </h3>
+            </div>
+          </div>
+          <!-- Score Section -->
+          <div class="info">
+            <div>
+              <h3>Score: <span id="total-score">0</span></h3>
+            </div>
+          </div>
+          <!-- Time Section -->
+          <div class="info">
+            <div>
+              <h3>Time: <span id="time">00:00</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="board">
+          <!--  -->
+        </div>
+      </section>
+    </main>
+    <div class="modal">
+      <div class="bg"></div>
+      <div class="content">
+        <h2>Game Over</h2>
+        <p>Score: <span id="final-score">0</span></p>
+        <p>Time: <span id="final-time">00:00</span></p>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

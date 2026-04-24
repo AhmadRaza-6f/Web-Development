@@ -52,6 +52,7 @@ function startTimer() {
   }, 1000);
 }
 function stopTimer() {
+  seconds = 0;
   clearInterval(timerInterval);
 }
 function colisionWithSnake(head) {
